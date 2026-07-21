@@ -26,51 +26,50 @@ Build intelligent AI Agents that can understand, reason, search, operate Linux s
 
 # 🌟 Overview
 
-NPU Agentic Platform is an enterprise-grade Agentic AI platform designed to integrate Large Language Models with real-world infrastructure.
+**NPU Agentic Platform** is an enterprise-grade Agentic AI Operations Platform built on **OpenClaw**, **K-EXAONE**, **Furiosa NPU**, and the **Model Context Protocol (MCP)**.
 
-Instead of answering questions only, the platform enables AI Agents to perform actual operations through tools.
+Unlike traditional LLM applications that only generate text, NPU Agentic Platform enables AI Agents to understand, reason, observe, and operate real-world infrastructure through natural language.
 
-Examples include:
+The platform provides a unified runtime for infrastructure automation, AI-assisted operations, and enterprise workflows.
 
-* Linux server management
-* Docker operations
-* Kubernetes operations
-* Furiosa NPU monitoring
-* Web Search
-* GitHub integration
-* Retrieval-Augmented Generation (RAG)
-* Vision AI
-* Android Agent
-* Enterprise workflow automation
+### Platform Capabilities
 
-The platform uses **OpenClaw** as the Agent runtime and **Model Context Protocol (MCP)** as the standard interface between AI Agents and external tools.
+* 🤖 AI Runtime powered by OpenClaw
+* 🧠 K-EXAONE Large Language Model Integration
+* 🖥 Linux System Operations
+* 🐳 Docker Container Operations
+* ☸ Kubernetes Cluster Operations
+* 🚀 Furiosa NPU Runtime Monitoring
+* 📊 AI Health Analysis
+* 📂 Filesystem Operations
+* 🌐 Web Search Integration
+* 📚 Enterprise RAG
+* 👁 Vision AI
+* 📱 Android Agent Integration
+
+Every capability is exposed through MCP, allowing AI Agents to execute infrastructure operations using natural language.
+
 
 ---
 
-# 🎬 Demo
+# 🎬 Demonstrations
 
-> **Coming Soon**
+This repository will include practical demonstrations covering:
 
-The following demonstrations will be published as development progresses.
+- Linux Infrastructure Operations
+- Docker Container Management
+- Kubernetes Cluster Administration
+- Furiosa NPU Monitoring
+- Capability Dashboard
+- Enterprise RAG
+- Android Agent
+- Vision AI
 
-* System MCP Demo
-* Furiosa NPU Monitoring
-* Kubernetes Operations
-* Android Tablet Control
-* Vision AI
-* RAG Assistant
+Future releases will provide:
 
-### GIF Preview
-
-```
-docs/demo/demo.gif
-```
-
-### YouTube
-
-```
-https://youtube.com/...
-```
+- GIF Demonstrations
+- YouTube Walkthroughs
+- End-to-End System Videos
 
 ---
 
@@ -165,45 +164,47 @@ I --> J
 
 # 🧩 Platform Components
 
-| Component        | Description                 | Status |
-| ---------------- | --------------------------- | ------ |
-| OpenClaw Gateway | Agent Runtime               | ✅      |
-| K-EXAONE         | Large Language Model        | ✅      |
-| Furiosa Runtime  | NPU Inference               | ✅      |
-| MCP SDK          | Model Context Protocol      | ✅      |
-| TypeScript SDK   | Tool Development            | ✅      |
-| System MCP       | Linux Operations            | 🚧     |
-| Web MCP          | Internet Search             | ⏳      |
-| RAG MCP          | Enterprise Knowledge        | ⏳      |
-| Vision MCP       | Image Generation & Analysis | ⏳      |
-| Android Agent    | Mobile Control              | ⏳      |
+| Component             | Responsibility       |
+| --------------------- | -------------------- |
+| OpenClaw Gateway      | Agent Runtime        |
+| K-EXAONE              | LLM                  |
+| Linux Operations      | Infrastructure       |
+| Docker Operations     | Container Management |
+| Kubernetes Operations | Cluster Management   |
+| Furiosa Runtime       | NPU Runtime          |
+| Capability Dashboard  | Runtime Discovery    |
+| AI Health Analyzer    | AI Operations        |
+| Enterprise RAG        | Knowledge Platform   |
+| Vision AI             | Image Intelligence   |
 
 ---
 
 # 📁 Repository Structure
 
 ```
-NPU-Agentic-Platform/
+system-mcp/
 
-├── system-mcp/
-├── web-mcp/
-├── rag-mcp/
-├── vision-mcp/
-├── android-agent/
-├── deployment/
-│   ├── docker/
-│   └── kubernetes/
-├── docs/
-│   ├── architecture/
-│   ├── roadmap/
-│   ├── setup/
-│   ├── development/
-│   ├── deployment/
-│   ├── images/
-│   └── demo/
-├── examples/
-└── README.md
-```
+src/
+
+core/
+
+services/
+
+system/
+
+tools/
+
+linux/
+
+docker/
+
+capability/
+
+utils/
+
+types/
+
+docs/
 
 ---
 
@@ -255,42 +256,21 @@ NPU-Agentic-Platform/
 
 ---
 
-# 📷 Screenshots
+# 📚 Example Queries
 
-> Coming Soon
+"Show me all running Docker containers"
 
-* OpenClaw Dashboard
-* Furiosa Runtime
-* Kubernetes Cluster
-* Android Tablet
-* Vision AI
-* RAG Workflow
+"Are there any failed Kubernetes Pods?"
 
----
+"Check current NPU utilization."
 
-# 🎥 Videos
+"Analyze today's system logs."
 
-Coming Soon
+"What capabilities are available?"
 
-* OpenClaw Setup
-* K-EXAONE Deployment
-* MCP Development
-* Docker Automation
-* Kubernetes Operations
-* Android Agent Demo
+"Search enterprise knowledge."
 
----
-
-# 📚 Documentation
-
-| Document          | Description          |
-| ----------------- | -------------------- |
-| docs/setup        | Installation Guide   |
-| docs/development  | Development Guide    |
-| docs/architecture | System Architecture  |
-| docs/deployment   | Docker & Kubernetes  |
-| docs/roadmap      | Sprint Roadmap       |
-| docs/demo         | Demonstration Videos |
+"Generate an image from this prompt."
 
 ---
 
@@ -308,15 +288,41 @@ The long-term vision of **NPU Agentic Platform** is to provide a unified enterpr
 * Interact with Android devices
 * Orchestrate enterprise AI workflows
 
-Through OpenClaw and the Model Context Protocol, the platform bridges the gap between Large Language Models and real-world infrastructure.
+NPU Agentic Platform aims to become a unified AI Operations Platform where Large Language Models can understand, reason, observe, and operate enterprise infrastructure through natural language while leveraging Furiosa NPU acceleration for high-performance AI workloads.
 
 ---
 
-# 🤝 Contributing
+# 🤝 Capability Dashboard
 
-Contributions are welcome.
+AI Runtime
 
-Please read the development guide before submitting pull requests.
+✔ OpenClaw
+
+✔ K-EXAONE
+
+Infrastructure
+
+✔ Linux
+
+✔ Docker
+
+✔ Kubernetes
+
+✔ Furiosa
+
+AI Services
+
+✔ Capability Dashboard
+
+✔ Health Analyzer
+
+✔ Web Search
+
+✔ RAG
+
+✔ Vision
+
+✔ Android
 
 ---
 
