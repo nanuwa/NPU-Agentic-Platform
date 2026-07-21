@@ -77,7 +77,9 @@ Future releases will provide:
 
 ## Enterprise Architecture
 
-```                                     Android Tablet
+
+```
+                                     Android Tablet
                                             │
                                    HTTPS / WebSocket
                                             │
@@ -133,6 +135,8 @@ Future releases will provide:
                       +--------------+
                       | Furiosa NPU  |
                       +--------------+
+
+ 
 
 ---
 
