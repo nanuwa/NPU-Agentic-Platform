@@ -73,12 +73,11 @@ Future releases will provide:
 
 ---
 
-# 🏗 Architecture
+# # 🏗 Architecture
 
 ## Enterprise Architecture
 
-
-```
+```text
                                      Android Tablet
                                             │
                                    HTTPS / WebSocket
@@ -118,7 +117,7 @@ Future releases will provide:
                │
                ▼
  +----------------------------+
- |     Command Executor        |
+ |     Command Executor       |
  +-------------+--------------+
                │
                ▼
@@ -127,64 +126,94 @@ Future releases will provide:
  +---------------------------+----------------------------------+
                              │
                              ▼
-                      +--------------+
-                      | K-EXAONE LLM |
-                      +------+-------+
-                             │
-                             ▼
-                      +--------------+
-                      | Furiosa NPU  |
-                      +--------------+
-
- 
+                      +----------------+
+                      |  K-EXAONE LLM  |
+                      +--------+-------+
+                               │
+                               ▼
+                      +----------------+
+                      |  Furiosa NPU   |
+                      +----------------+
 
 ---
 
-# 📈 High-Level Workflow
-mermaid
-flowchart TD
+## High-Level Architecture
 
-A[User]
+The platform follows a layered architecture designed for enterprise AI operations.
 
-B[OpenClaw]
+### AI Runtime Layer
 
-C[Planner]
+* OpenClaw Gateway
+* Planner
+* Memory
+* Tool Calling
+* Session Management
 
-D[Memory]
+### Capability Layer
 
-E[System MCP]
+The **Capability Dashboard** dynamically discovers available platform capabilities and presents them to the AI Agent.
 
-F[Web MCP]
+Examples include:
 
-G[RAG MCP]
+* Linux Operations
+* Docker Operations
+* Kubernetes Operations
+* Furiosa NPU Operations
+* Web Search
+* Enterprise RAG
+* Vision AI
+* Android Agent
 
-H[Furiosa Runtime]
+### MCP Layer
 
-I[K-EXAONE]
+Each domain is implemented as an independent MCP module.
 
-J[Answer]
+* Linux MCP
+* Docker MCP
+* Kubernetes MCP
+* Furiosa MCP
+* Web MCP
+* RAG MCP
+* Vision MCP
 
-A --> B
+### Service Layer
 
-B --> C
+Business logic is separated from MCP tools through reusable service classes.
 
-C --> D
+Current service modules include:
 
-C --> E
+* LinuxService
+* DockerService
+* KubernetesService
+* FuriosaService
+* OpenClawService
 
-C --> F
+### Core Layer
 
-C --> G
+Shared infrastructure components provide common execution and response handling.
 
-E --> H
+* CommandExecutor
+* ToolRegistry
+* ResponseFormatter
+* HealthAnalyzer
+* ToolTypes
 
-H --> I
+### Runtime Layer
 
-F --> I
+The platform integrates with enterprise infrastructure through native runtimes and command interfaces.
 
-G --> I
+* Linux CLI
+* Docker Engine
+* Kubernetes API
+* Furiosa Runtime
 
-I --> J
+### AI Inference Layer
+
+Large Language Model inference is accelerated by the Furiosa NPU runtime.
+
+* K-EXAONE
+* Furiosa NPU
+
 ---
 
 # 🧩 Platform Components
