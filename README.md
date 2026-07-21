@@ -141,8 +141,7 @@ Future releases will provide:
 ---
 
 # 📈 High-Level Workflow
-
-```mermaid
+mermaid
 flowchart TD
 
 A[User]
@@ -186,8 +185,6 @@ F --> I
 G --> I
 
 I --> J
-```
-
 ---
 
 # 🧩 Platform Components
