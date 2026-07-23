@@ -2,20 +2,30 @@
 
 <p align="center">
 
-**Enterprise Agentic AI Platform powered by OpenClaw, K-EXAONE and Furiosa NPU**
+<h3 align="center">
+Enterprise Agentic AI Operations Platform
+</h3>
 
-Build intelligent AI Agents that can understand, reason, search, operate Linux systems, control Kubernetes, interact with Docker, perform Retrieval-Augmented Generation (RAG), execute Vision AI workflows, and orchestrate enterprise infrastructure through the **Model Context Protocol (MCP)**.
+<p align="center">
+Powered by <strong>OpenClaw</strong> • <strong>K-EXAONE</strong> • <strong>Furiosa NPU</strong> • <strong>Model Context Protocol (MCP)</strong>
+</p>
+
+<p align="center">
+
+AI Agents that can **Understand • Reason • Plan • Observe • Operate**
+
+</p>
 
 ---
 
 ![Build](https://img.shields.io/badge/Build-Passing-brightgreen)
-![Version](https://img.shields.io/badge/Version-v0.2.0--alpha-blue)
+![Version](https://img.shields.io/badge/Version-v0.3.0-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)
 ![NodeJS](https://img.shields.io/badge/Node.js-24.x-green)
-![OpenClaw](https://img.shields.io/badge/OpenClaw-Agentic_AI-purple)
+![OpenClaw](https://img.shields.io/badge/OpenClaw-Agent_Runtime-purple)
 ![MCP](https://img.shields.io/badge/Model_Context_Protocol-MCP-red)
-![Docker](https://img.shields.io/badge/Docker-Enabled-blue)
+![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-Ready-326CE5)
 ![Furiosa](https://img.shields.io/badge/Furiosa-NPU-orange)
 ![K--EXAONE](https://img.shields.io/badge/K--EXAONE-LLM-red)
@@ -26,56 +36,47 @@ Build intelligent AI Agents that can understand, reason, search, operate Linux s
 
 # 🌟 Overview
 
-**NPU Agentic Platform** is an enterprise-grade Agentic AI Operations Platform built on **OpenClaw**, **K-EXAONE**, **Furiosa NPU**, and the **Model Context Protocol (MCP)**.
+**NPU Agentic Platform** is an enterprise-grade AI Operations Platform that combines **OpenClaw**, **K-EXAONE**, **Furiosa NPU**, and the **Model Context Protocol (MCP)** into a unified runtime for intelligent infrastructure automation.
 
-Unlike traditional LLM applications that only generate text, NPU Agentic Platform enables AI Agents to understand, reason, observe, and operate real-world infrastructure through natural language.
+Unlike traditional LLM applications that only generate responses, **NPU Agentic Platform enables AI Agents to understand, reason, observe, and execute real-world operations** across enterprise infrastructure using natural language.
 
-The platform provides a unified runtime for infrastructure automation, AI-assisted operations, and enterprise workflows.
-
-### Platform Capabilities
-
-* 🤖 AI Runtime powered by OpenClaw
-* 🧠 K-EXAONE Large Language Model Integration
-* 🖥 Linux System Operations
-* 🐳 Docker Container Operations
-* ☸ Kubernetes Cluster Operations
-* 🚀 Furiosa NPU Runtime Monitoring
-* 📊 AI Health Analysis
-* 📂 Filesystem Operations
-* 🌐 Web Search Integration
-* 📚 Enterprise RAG
-* 👁 Vision AI
-* 📱 Android Agent Integration
-
-Every capability is exposed through MCP, allowing AI Agents to execute infrastructure operations using natural language.
-
+The platform provides a modular architecture where infrastructure capabilities are exposed as MCP services, allowing AI Agents to interact with Linux systems, Docker containers, Kubernetes clusters, enterprise knowledge, and AI accelerators through a consistent interface.
 
 ---
 
-# 🎬 Demonstrations
+# 🚀 Platform Capabilities
 
-This repository will include practical demonstrations covering:
-
-- Linux Infrastructure Operations
-- Docker Container Management
-- Kubernetes Cluster Administration
-- Furiosa NPU Monitoring
-- Capability Dashboard
-- Enterprise RAG
-- Android Agent
-- Vision AI
-
-Future releases will provide:
-
-- GIF Demonstrations
-- YouTube Walkthroughs
-- End-to-End System Videos
+| Domain                       | Capability                                       |
+| ---------------------------- | ------------------------------------------------ |
+| 🤖 AI Runtime                | OpenClaw Gateway, Planner, Memory, Tool Calling  |
+| 🧠 Large Language Model      | K-EXAONE                                         |
+| 🚀 AI Accelerator            | Furiosa Runtime & NPU                            |
+| 🖥 Infrastructure Operations | Linux, Docker, Kubernetes                        |
+| 📊 AI Operations             | Capability Dashboard, Health Analyzer            |
+| 🌐 Enterprise AI             | Web Search, Retrieval-Augmented Generation (RAG) |
+| 👁 Vision AI                 | Image Understanding & Generation                 |
+| 📱 Device Integration        | Android Agent                                    |
 
 ---
 
-# # 🏗 Architecture
+# 💡 Why NPU Agentic Platform?
 
-## Enterprise Architecture
+Traditional AI assistants are primarily designed to answer questions.
+
+NPU Agentic Platform goes beyond conversation by enabling AI Agents to execute real infrastructure operations through standardized MCP interfaces.
+
+| Traditional LLM    | NPU Agentic Platform          |
+| ------------------ | ----------------------------- |
+| Answer Questions   | Understand Infrastructure     |
+| Generate Text      | Reason & Plan                 |
+| Passive Assistant  | Execute Actions               |
+| Limited Tool Usage | Enterprise Tool Orchestration |
+| Text Output        | Infrastructure Operations     |
+| Single Interaction | Continuous AI Operations      |
+
+---
+
+# 🏗 Enterprise Architecture
 
 ```text
                                      Android Tablet
@@ -100,7 +101,6 @@ Future releases will provide:
  +----------------+     +----------------+             +----------------+
  | Infrastructure |     |  Enterprise AI |             | Device Control |
  +--------+-------+     +--------+-------+             +--------+-------+
-          │                      │                              │
           │                      │                              │
           ▼                      ▼                              ▼
  +----------------+      +---------------+             +----------------+
@@ -134,260 +134,17 @@ Future releases will provide:
                       +----------------+
                       |  Furiosa NPU   |
                       +----------------+
-
----
-
-## High-Level Architecture
-
-The platform follows a layered architecture designed for enterprise AI operations.
-
-### AI Runtime Layer
-
-* OpenClaw Gateway
-* Planner
-* Memory
-* Tool Calling
-* Session Management
-
-### Capability Layer
-
-The **Capability Dashboard** dynamically discovers available platform capabilities and presents them to the AI Agent.
-
-Examples include:
-
-* Linux Operations
-* Docker Operations
-* Kubernetes Operations
-* Furiosa NPU Operations
-* Web Search
-* Enterprise RAG
-* Vision AI
-* Android Agent
-
-### MCP Layer
-
-Each domain is implemented as an independent MCP module.
-
-* Linux MCP
-* Docker MCP
-* Kubernetes MCP
-* Furiosa MCP
-* Web MCP
-* RAG MCP
-* Vision MCP
-
-### Service Layer
-
-Business logic is separated from MCP tools through reusable service classes.
-
-Current service modules include:
-
-* LinuxService
-* DockerService
-* KubernetesService
-* FuriosaService
-* OpenClawService
-
-### Core Layer
-
-Shared infrastructure components provide common execution and response handling.
-
-* CommandExecutor
-* ToolRegistry
-* ResponseFormatter
-* HealthAnalyzer
-* ToolTypes
-
-### Runtime Layer
-
-The platform integrates with enterprise infrastructure through native runtimes and command interfaces.
-
-* Linux CLI
-* Docker Engine
-* Kubernetes API
-* Furiosa Runtime
-
-### AI Inference Layer
-
-Large Language Model inference is accelerated by the Furiosa NPU runtime.
-
-* K-EXAONE
-* Furiosa NPU
-
----
-
-# 🧩 Platform Components
-
-| Component             | Responsibility       |
-| --------------------- | -------------------- |
-| OpenClaw Gateway      | Agent Runtime        |
-| K-EXAONE              | LLM                  |
-| Linux Operations      | Infrastructure       |
-| Docker Operations     | Container Management |
-| Kubernetes Operations | Cluster Management   |
-| Furiosa Runtime       | NPU Runtime          |
-| Capability Dashboard  | Runtime Discovery    |
-| AI Health Analyzer    | AI Operations        |
-| Enterprise RAG        | Knowledge Platform   |
-| Vision AI             | Image Intelligence   |
-
----
-
-# 📁 Repository Structure
-
 ```
-system-mcp/
-
-src/
-
-core/
-
-services/
-
-system/
-
-tools/
-
-linux/
-
-docker/
-
-capability/
-
-utils/
-
-types/
-
-docs/
 
 ---
 
-# ⚙ Technology Stack
+# 🎯 Core Design Principles
 
-| Category        | Technology                   |
-| --------------- | ---------------------------- |
-| AI Runtime      | OpenClaw                     |
-| LLM             | K-EXAONE                     |
-| Accelerator     | Furiosa NPU                  |
-| Tool Protocol   | Model Context Protocol (MCP) |
-| Backend         | Node.js                      |
-| Language        | TypeScript                   |
-| Container       | Docker                       |
-| Orchestration   | Kubernetes                   |
-| Vector Database | MongoDB                      |
-| Mobile          | Android                      |
-| API             | OpenAI Compatible API        |
+* **Natural Language First** — Operate infrastructure through conversational AI.
+* **MCP-Native Architecture** — Modular, extensible services based on the Model Context Protocol.
+* **Enterprise Ready** — Designed for production environments and AI Operations.
+* **Hardware Accelerated** — Optimized for Furiosa NPU inference.
+* **Service-Oriented Design** — Clear separation between tools, services, and execution layers.
+* **Extensible Platform** — New capabilities can be added as independent MCP modules.
+* **Unified AI Operations** — Linux, Docker, Kubernetes, NPU, RAG, Vision, and mobile integration under a single AI runtime.
 
----
-
-# 🛠 MCP Services
-
-| MCP Service      | Description                    | Status |
-| ---------------- | ------------------------------ | ------ |
-| Linux Tools      | hostname, uptime, memory, disk | 🚧     |
-| Docker Tools     | containers, logs, images       | 🚧     |
-| Kubernetes Tools | nodes, pods, events            | 🚧     |
-| Furiosa Tools    | NPU monitoring                 | 🚧     |
-| GitHub MCP       | Repository operations          | ⏳      |
-| Web Search MCP   | Search engine integration      | ⏳      |
-| Weather MCP      | Weather services               | ⏳      |
-| RAG MCP          | Enterprise Knowledge Search    | ⏳      |
-| Vision MCP       | Image Generation & Analysis    | ⏳      |
-
----
-
-# 🚀 Development Roadmap
-
-| Sprint    | Goal                   | Status         |
-| --------- | ---------------------- | -------------- |
-| Sprint 1  | OpenClaw Installation  | ✅ Complete     |
-| Sprint 2A | MCP Foundation         | ✅ Complete     |
-| Sprint 2B | System MCP Development | 🚧 In Progress |
-| Sprint 3  | Web MCP                | ⏳ Planned      |
-| Sprint 4  | Enterprise RAG         | ⏳ Planned      |
-| Sprint 5  | Vision AI              | ⏳ Planned      |
-| Sprint 6  | Android Agent          | ⏳ Planned      |
-
----
-
-# 📚 Example Queries
-
-"Show me all running Docker containers"
-
-"Are there any failed Kubernetes Pods?"
-
-"Check current NPU utilization."
-
-"Analyze today's system logs."
-
-"What capabilities are available?"
-
-"Search enterprise knowledge."
-
-"Generate an image from this prompt."
-
----
-
-# 🎯 Project Vision
-
-The long-term vision of **NPU Agentic Platform** is to provide a unified enterprise platform where AI Agents can:
-
-* Understand natural language
-* Execute infrastructure operations
-* Manage Linux servers
-* Control Docker and Kubernetes
-* Monitor Furiosa NPUs
-* Search enterprise knowledge
-* Generate and analyze images
-* Interact with Android devices
-* Orchestrate enterprise AI workflows
-
-NPU Agentic Platform aims to become a unified AI Operations Platform where Large Language Models can understand, reason, observe, and operate enterprise infrastructure through natural language while leveraging Furiosa NPU acceleration for high-performance AI workloads.
-
----
-
-# 🤝 Capability Dashboard
-
-AI Runtime
-
-✔ OpenClaw
-
-✔ K-EXAONE
-
-Infrastructure
-
-✔ Linux
-
-✔ Docker
-
-✔ Kubernetes
-
-✔ Furiosa
-
-AI Services
-
-✔ Capability Dashboard
-
-✔ Health Analyzer
-
-✔ Web Search
-
-✔ RAG
-
-✔ Vision
-
-✔ Android
-
----
-
-# 📄 License
-
-This project is released under the MIT License.
-
----
-
-<p align="center">
-
-**Built with ❤️ using OpenClaw, K-EXAONE, Furiosa NPU and the Model Context Protocol.**
-
-</p>
