@@ -1,12 +1,10 @@
 # 🚀 NPU Agentic Platform
 
-</p>
 
 <h1 align="center">
 Enterprise Agentic AI Operations Platform
 </h1>
 
-<p align="center">
 
 Powered by
 
