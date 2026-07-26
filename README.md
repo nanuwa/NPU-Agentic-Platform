@@ -927,18 +927,6 @@ Special thanks to the communities and technologies that make this project possib
 
 ---
 
-<p align="center">
-
-## 🚀 NPU Agentic Platform
-
-**Enterprise Agentic AI Operations Platform**
-
-Powered by **OpenClaw • K-EXAONE • Furiosa NPU • Model Context Protocol**
-
-**Understand • Reason • Plan • Observe • Operate**
-
----
-
 Building the next generation of AI-powered infrastructure operations.
 
 ⭐ **If this project helps you, please consider giving it a Star!**
