@@ -220,51 +220,109 @@ NPU Agentic Platform performs **operations**.
 
 # 📸 Platform Preview
 
-> Screenshots will be updated as development progresses.
+The following screenshots illustrate the major components of the NPU Agentic Platform. Additional screenshots will be published as new capabilities are released.
 
-| Dashboard | Runtime |
-|------------|---------|
-| ![](docs/images/dashboard.png) | ![](docs/images/runtime.png) |
+| OpenClaw Dashboard | Capability Dashboard |
+|--------------------|----------------------|
+| ![](docs/images/openclaw-dashboard.png) | ![](docs/images/capability-dashboard.png) |
 
-| Docker | Kubernetes |
-|----------|------------|
-| ![](docs/images/docker.png) | ![](docs/images/kubernetes.png) |
+| Linux Operations | Docker Operations |
+|------------------|-------------------|
+| ![](docs/images/linux-mcp.png) | ![](docs/images/docker-mcp.png) |
 
-| Furiosa | Android |
-|----------|----------|
-| ![](docs/images/furiosa.png) | ![](docs/images/android.png) |
+| Kubernetes Operations | Furiosa Runtime |
+|------------------------|-----------------|
+| ![](docs/images/kubernetes-mcp.png) | ![](docs/images/furiosa-runtime.png) |
+
+| AI Health Analyzer | Android Agent |
+|--------------------|---------------|
+| ![](docs/images/health-analyzer.png) | ![](docs/images/android-agent.png) |
+
+> **Note:** Screenshots will be updated as the platform evolves.
 
 ---
 
 # 🎬 Live Demonstration
 
+The following diagram illustrates how a natural language request flows through the platform.
+
 ```text
-Natural Language
-
-↓
-
-"Show current NPU utilization"
-
-↓
-
-Planner
-
-↓
-
-Furiosa MCP
-
-↓
-
-Runtime
-
-↓
-
-AI Analysis
-
-↓
-
-Natural Language Response
+┌────────────────────────────────────┐
+│ User Request                       │
+│ "Show current NPU utilization."    │
+└────────────────────────────────────┘
+                 │
+                 ▼
+      +-----------------------+
+      | OpenClaw Gateway      |
+      +-----------------------+
+                 │
+                 ▼
+      +-----------------------+
+      | Planner & Memory      |
+      +-----------------------+
+                 │
+                 ▼
+      +-----------------------+
+      | Capability Discovery  |
+      +-----------------------+
+                 │
+                 ▼
+      +-----------------------+
+      | Furiosa MCP           |
+      +-----------------------+
+                 │
+                 ▼
+      +-----------------------+
+      | Furiosa Runtime       |
+      +-----------------------+
+                 │
+                 ▼
+      +-----------------------+
+      | NPU Metrics           |
+      +-----------------------+
+                 │
+                 ▼
+      +-----------------------+
+      | AI Analysis           |
+      +-----------------------+
+                 │
+                 ▼
+┌────────────────────────────────────┐
+│ Natural Language Response          │
+│ • Runtime Active                   │
+│ • NPU Utilization: 47%             │
+│ • Memory Usage: 6.2 GB             │
+│ • Temperature: Normal              │
+│ • Overall Health: Excellent        │
+└────────────────────────────────────┘
 ```
+
+### Example Interaction
+
+**User**
+
+```text
+Show current NPU utilization.
+```
+
+**AI Response**
+
+```text
+Furiosa Runtime Status
+
+✓ Runtime: Active
+✓ Device: RNGD NPU
+✓ Core Utilization: 47%
+✓ Memory Usage: 6.2 GB
+✓ Temperature: Normal
+
+Overall Health: ★★★★★ Excellent
+```
+
+---
+
+📹 **Demo videos and animated GIFs will be added in future releases.**
 
 ---
 
