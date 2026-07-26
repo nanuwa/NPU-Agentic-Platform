@@ -1,9 +1,5 @@
 # 🚀 NPU Agentic Platform
 
-<p align="center">
-
-<img src="docs/images/platform-overview.png" width="100%">
-
 </p>
 
 <h1 align="center">
