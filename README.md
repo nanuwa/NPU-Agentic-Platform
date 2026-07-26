@@ -27,31 +27,24 @@ Powered by
 
 ## Understand • Reason • Plan • Observe • Operate
 
-</p>
-
----
+<p align="center">
 
 ![Build](https://img.shields.io/badge/Build-Passing-brightgreen)
-
 ![Version](https://img.shields.io/badge/Version-v0.5-blue)
-
-![Platform](https://img.shields.io/badge/Platform-Linux-success)
-
 ![OpenClaw](https://img.shields.io/badge/OpenClaw-Agent_Runtime-purple)
-
 ![EXAONE](https://img.shields.io/badge/K--EXAONE-LLM-red)
-
 ![Furiosa](https://img.shields.io/badge/FuriosaAI-RNGD-orange)
-
-![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED)
-
-![Kubernetes](https://img.shields.io/badge/Kubernetes-Ready-326CE5)
-
 ![OpenAI](https://img.shields.io/badge/OpenAI-Compatible_API-success)
 
-![MCP](https://img.shields.io/badge/MCP-Native-red)
+<br>
 
+![Platform](https://img.shields.io/badge/Platform-Linux-success)
+![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-Ready-326CE5)
+![MCP](https://img.shields.io/badge/MCP-Native-red)
 ![License](https://img.shields.io/badge/License-MIT-green)
+
+</p>
 
 ---
 
